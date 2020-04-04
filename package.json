@@ -1,0 +1,22 @@
+{
+  "name": "sopa-de-letras",
+  "version": "1.0.0",
+  "description": "Descubrir cuantas veces se encuentra una palabra en una sopa de letras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiagoMena/sopa-de-letras.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiagoMena/sopa-de-letras/issues"
+  },
+  "homepage": "https://github.com/SantiagoMena/sopa-de-letras#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
