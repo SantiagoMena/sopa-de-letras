@@ -4,7 +4,8 @@
   "description": "Descubrir cuantas veces se encuentra una palabra en una sopa de letras",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",

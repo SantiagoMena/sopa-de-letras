@@ -4,7 +4,7 @@ class Sopa {
         let sopaArray = [];
         let palabraArray = [];
         
-        sopa.split('\r\n').forEach(letra => sopaArray.push(letra.split('')));
+        sopa.split('\n').forEach(letra => sopaArray.push(letra.split('')));
         palabra.split('').forEach(letra => palabraArray.push(letra))
 
         this.sopa = sopaArray;
@@ -231,7 +231,6 @@ class Sopa {
                     palabra.forEach((letraPalabra, i) => {
                         // Comprobar si coinciden las letras en orden
                         coincide = typeof sopa[x-i] !== 'undefined' && sopa[x-i][y-i] === letraPalabra && coincide;
-                        console.log({letra: sopa[x][y], lp: letraPalabra,x1: x - palabra.length + 1, y1: y - palabra.length + 1, x, y, coincide});
                         if(coincide) {
                             // Si la palabra ha sido examinada totalmente 
                             if(i === palabra.length - 1){
@@ -255,6 +254,8 @@ class Sopa {
         this.descifrarAbajoVerticalIzquierda();
         this.descifrarIzquierda();
         this.descifrarArribaVerticalIzquierda();
+        
+        console.log(this.coincidencias);
         
         return {
             resultado: this.coincidencias.length, 
